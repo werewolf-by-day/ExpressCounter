@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Keep on counting!</title>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="top">
+			<h1>Counter</h1>
+			<p><%= count %> times</p>
+		</div>
+		<form action="/plus" method="post">
+			<input type="submit" value="+2">
+		</form>
+		<br>
+		<form action="/reset" method="post">
+			<input type="submit" value="reset">
+		</form>
+	</body>
+</html>
